@@ -9,8 +9,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700..900&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="/public/css/style.css"/>
+
     <title>My Fifth Article | Kevin's blog</title>
     <!-- Ở đây, bạn có thể gắn SEO meta, v.v. -->
+   <!-- fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Css animation -->
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!-- SWiperSWiper -->
+ <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     
@@ -18,9 +35,18 @@
   <div class="container">
     <div class="page-header__content">
       <div>
-        <i class="fa-solid fa-compass-drafting"></i>
-        <span >My Home</span>
+        <a href="/">
+         <i class="fa-solid fa-compass-drafting"></i>
+         <span >My Home</span>
+        </a>
       </div>
+      <div class="search-box">
+            <input type="text" placeholder="Search..." />
+            <span class="search-icon">
+                🔍
+            </span>
+        </div>
+
       <nav>
         
         <ul role="list" class="nav-list flex-group">
@@ -30,12 +56,14 @@
           <li>
             <a href="/blog/">Blog</a>
           </li>
+          <li>
+            <a href="#">About</a>
+          </li>
         </ul>
       </nav>
     </div>
   </div>
 </header>
-    <hr/>
     <main>
       
       
@@ -45,7 +73,7 @@
       My Fifth Article
     </h1>
     <figure class="main-article__figure">
-      <img src="/assets/blog/article-5.jpg" alt="This is a test">
+      <img src="https://wphtml.com/html/tf/chorbi/assets/img/bg/1.jpg" alt="This is a test">
       <figcaption>
         This is a test
       </figcaption>
@@ -70,6 +98,6 @@
 </svg>
   <p>© 2020 Company Name. All rights reserved.</p>
 </footer>
-    
+    <script src="/public/js/script.js"></script>
   </body>
 </html>
