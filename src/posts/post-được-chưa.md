@@ -7,6 +7,6 @@ description: Ahihi
 image: /public/images/logo4.svg
 imageAlt: Hình ảnh của ai
 tags:
-  - post
+  - dev
 ---
  ssssssssssss
