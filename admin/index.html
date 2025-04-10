@@ -5,10 +5,26 @@
     <title>Content Manager</title>
   </head>
   <body>
-    <!-- Thêm phần tử mount CMS -->
+    <!-- Mount point cho CMS -->
     <div id="nc-root"></div>
+
+    <!-- Tải Netlify Identity -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        netlifyIdentity.init(); // Bắt token ngay khi load
 
+        netlifyIdentity.on("init", user => {
+          if (!user) {
+            netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
 
+    <!-- Tải Netlify CMS -->
+    <script src="https://unpkg.com/netlify-cms@latest/dist/netlify-cms.js"></script>
   </body>
 </html>
