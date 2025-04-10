@@ -1,5 +1,6 @@
 backend:
   name: github
+  repo: ngh-duy/myBlog_Eleventy_JAMStack
   branch: DEV # hoặc DEV nếu bạn dùng nhánh DEV
 
 media_folder: "public/images"
