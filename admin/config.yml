@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   branch: DEV # hoặc DEV nếu bạn dùng nhánh DEV
 
 media_folder: "public/images"
