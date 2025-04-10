@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: DEV # hoặc DEV nếu bạn dùng nhánh DEV
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "posts"
+    label: "Bài viết"
+    folder: "src/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tiêu đề", name: "title", widget: "string" }
+      - { label: "Ngày", name: "date", widget: "datetime" }
+      - { label: "Mô tả", name: "description", widget: "text" }
+      - { label: "Hình ảnh", name: "image", widget: "image" }
+      - { label: "Nội dung", name: "body", widget: "markdown" }
