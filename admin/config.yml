@@ -17,4 +17,12 @@ collections:
       - { label: "Ngày", name: "date", widget: "datetime" }
       - { label: "Mô tả", name: "description", widget: "text" }
       - { label: "Hình ảnh", name: "image", widget: "image" }
+      - {  label: "Tags"
+            name: "tags"
+            widget: "select"
+            multiple: true
+            options: ["post", "supplier", "dev", "news"]
+            default: ["post"] 
+        }
       - { label: "Nội dung", name: "body", widget: "markdown" }
+
