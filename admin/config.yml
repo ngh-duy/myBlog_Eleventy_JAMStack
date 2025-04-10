@@ -4,7 +4,7 @@ backend:
   branch: DEV # hoặc DEV nếu bạn dùng nhánh DEV
 
 media_folder: "public/images"
-public_folder: "/images"
+public_folder: "/public/images"
 
 collections:
   - name: "posts"
