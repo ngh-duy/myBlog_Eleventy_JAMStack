@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  repo: ngh-duy/myBlog_Eleventy_JAMStack
+  branch: DEV # hoặc DEV nếu bạn dùng nhánh DEV
+
+media_folder: "public/images"
+public_folder: "/public/images"
+
+collections:
+  - name: "posts"
+    label: "Bài viết"
+    folder: "src/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "select"
+        options: ["post.njk", "page.njk", "landing.njk"]
+        default: "post.njk"
+      - { label: "Tiêu đề", name: "title", widget: "string" }
+      - { label: "Tác giả", name: "author", widget: "string" }
+      - { label: "Ngày", name: "date", widget: "datetime" }
+      - { label: "Mô tả", name: "description", widget: "text" }
+      - { label: "Hình ảnh", name: "image", widget: "image" }
+      - { label: "Mô tả hình ảnh", name: "imageAlt", widget: "string" }
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        multiple: true
+        options: ["post", "featured", "supplier", "dev", "news"]
+        default: ["post"]
+      - { label: "Nội dung", name: "body", widget: "markdown" }
+
+

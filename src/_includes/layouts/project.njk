@@ -1,0 +1,15 @@
+---
+layout: base.njk
+---
+
+<article class="main-article container">
+  <h1 class="article-title">{{ title }}</h1>
+  <img src="{{ image }}" alt="{{ imageAlt }}" style="width: 100%; border-radius: 12px; margin-bottom: 1rem;">
+  <p style="color: var(--clr-neutral-400); font-style: italic;">{{ description }}</p>
+  <div class="project-content flow">
+    {{ content | safe }}
+  </div>
+  {% if url %}
+    <a href="{{ url }}" class="btn btn--primary" target="_blank">Xem dự án</a>
+  {% endif %}
+</article>

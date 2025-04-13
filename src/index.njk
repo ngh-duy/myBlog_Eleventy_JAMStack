@@ -1,0 +1,157 @@
+---
+layout: base.njk
+title: Trang chủ
+---
+
+<section class="swiper hero">
+  <div class="swiper-wrapper">
+    {% for post in collections.post %}
+      <div class="swiper-slide">
+        <div class="introducde" style="background-image: url({{ post.data.image }});">
+          <div class="introduce-content">
+            <h1 class="animate__animated animate__backInDown">{{ post.data.title }}</h1>
+            <p class="animate__animated animate__backInDown">{{ post.data.author }}</p>
+            <p style="width:60%; text-align:center;margin: 0 auto">{{ post.data.description }}</p>
+            <button>Read more</button>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+
+<section id="featured-articles" class="featured-articles">
+  <div class="container flow">
+    <h2 class="section-title text-center ">We are expert web agency</h2>
+    <hr class="center-line"/>
+    <p class="text-center">
+      It is a long established fact that a reader will be distracted by the readable content of a page when <br/> looking at its layout established fact that a reader will.
+    </p>
+  </div>
+  <div class="features-section">
+  <div class="feature-box">
+    <img src="https://wphtml.com/html/tf/chorbi/assets/img/service-icon/icon-1.png" alt="Responsive Icon">
+    <h3>Fully Responsive</h3>
+    <p>Lorem ipsum dolor sit amet consetetur diam sadipscing elitr sed diam nonumy eirmod.</p>
+  </div>
+
+  <div class="feature-box">
+    <img src="https://wphtml.com/html/tf/chorbi/assets/img/service-icon/icon-2.png" alt="Perfect For All">
+    <h3>Perfect For All</h3>
+    <p>Lorem ipsum dolor sit amet consetetur diam sadipscing elitr sed diam nonumy eirmod.</p>
+  </div>
+
+  <div class="feature-box">
+    <img src="https://wphtml.com/html/tf/chorbi/assets/img/service-icon/icon-3.png" alt="Customizable">
+    <h3>Easy To Customize</h3>
+    <p>Lorem ipsum dolor sit amet consetetur diam sadipscing elitr sed diam nonumy eirmod.</p>
+  </div>
+
+  <div class="feature-box">
+    <img src="https://wphtml.com/html/tf/chorbi/assets/img/service-icon/icon-4.png" alt="Support">
+    <h3>24/7 Support</h3>
+    <p>Lorem ipsum dolor sit amet consetetur diam sadipscing elitr sed diam nonumy eirmod.</p>
+  </div>
+</div>
+
+</section>
+<section class="feature-section">
+  <div class="container">
+    <div class="feature-content">
+      <div class="feature-image">
+        <img src="https://wphtml.com/html/tf/chorbi/assets/img/team/team2.jpg" alt="Happy student" width="410">
+      </div>
+
+      <div class="feature-text">
+        <h2>Manage everything<br><strong>in one place</strong></h2>
+        <p class="description">
+          There are many variations of passages of Lorem Ipsum available,
+          but the majority have suffered alteration in some form,
+          by injected humour, or randomised words which don't look even slightly believable.
+        </p>
+
+        <div class="award-box">
+          <img src="https://wphtml.com/html/tf/chorbi/assets/img/award.png" alt="Trophy" class="award-icon" width="800">
+          <div>
+            <h4><strong>INTERNATIONAL AWARDS 2024</strong><br>WITH 30 YEARS OF EXPERIENCE</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+          </div>
+        </div>
+
+        <a href="#" class="btn">Know More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="service-section">
+  <div class="container">
+    <h2 class="section-title" style="color: aqua">Our Service</h2>
+    <p class="section-subtitle">
+      It is a long established fact that a reader will be distracted by the readable content of a page when
+      looking at its layout established fact that a reader will.
+    </p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fa-solid fa-laptop-file fa-beat" style="color: #2b0990;"></i>
+        <h3>Website Audit</h3>
+        <br/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae accusantium consectetur.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-file-zipper fa-beat" style="color: #2b0990;"></i>
+        <h3>Backlink Service</h3>
+           <br/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae accusantium consectetur.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-cloud fa-beat" style="color: #2b0990;"></i>
+        <h3>SEO Service</h3>
+           <br/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae accusantium consectetur.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-truck-fast fa-beat" style="color: #2b0990;"></i>
+        <h3>Amazon Affiliate</h3>
+           <br/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae accusantium consectetur.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-house-tsunami fa-beat" style="color: #2b0990;"></i>
+        <h3>Paid Media</h3>
+           <br/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae accusantium consectetur.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-brands fa-aws fa-beat" style="color: #2b0990;"></i>
+        <h3>Outreach Service</h3>
+           <br/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae accusantium consectetur.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="company">
+  <div class="company-wrapper">
+    <h2>Trusted By 1k+ Company Around The World!</h2>
+
+    <div class="logo-slider">
+      <div class="logo-track">
+        {% for sup in collections.supplier %}
+          <img src="{{ sup.data.image }}" alt="{{ sup.data.imageAlt }}" />
+        {% endfor %}
+        {% for sup in collections.supplier %}
+          <img src="{{ sup.data.image }}" alt="{{ sup.data.imageAlt }}" />
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
