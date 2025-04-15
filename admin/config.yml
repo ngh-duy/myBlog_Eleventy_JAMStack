@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: ngh-duy/myBlog_Eleventy_JAMStack
-  branch: DEV
+  branch: master
 
 media_folder: "public/images"
 public_folder: "/public/images"
