@@ -1,0 +1,11 @@
+[build]
+  publish = "_site"
+  command = "npm run build"
+
+[dev]
+  command = "npm start"
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
