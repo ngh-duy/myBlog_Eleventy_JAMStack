@@ -2,20 +2,26 @@
 layout: base.njk
 ---
 
-<article class="main-article">
-  <div class="container container--narrow flow">
-    <h1 class="article-title">
+<article class="main-article py-12 font-roboto">
+  <div class="container max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight text-center">
       {{ title }}
     </h1>
-    <figure class="main-article__figure">
-      <img src="{{ image }}" alt="{{ imageAlt }}">
-      <figcaption>
+
+    <figure class="w-full text-center">
+      <img
+        src="{{ image }}"
+        alt="{{ imageAlt }}"
+        class="mx-auto rounded-lg shadow-md max-h-[500px] object-cover w-full"
+      />
+      <figcaption class="mt-4 text-sm text-gray-500 dark:text-gray-400 italic">
         {{ imageAlt }}
       </figcaption>
     </figure>
-    
+
     <!-- Nội dung chính của bài viết -->
-    {{ content | safe }}
-    
+    <div class="prose prose-lg dark:prose-invert max-w-none">
+      {{ content | safe }}
+    </div>
   </div>
 </article>

@@ -1,20 +1,22 @@
 ---
 layout: post.njk
-title: My Second Article
+title: Tại sao nên học IT trong thời đại số?
 author: Kevin Powell
-date: 2021-05-15
-tags: ["post", "featured"]
-image: https://wphtml.com/html/tf/chorbi/assets/img/bg/1.jpg
+date: 2021-05-28
+tags: ['post', 'featured']
+image: https://wphtml.com/html/tf/chorbi/assets/img/bg/3.jpg
 imageAlt: This is a test
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
+description: Cùng tìm hiểu lý do vì sao ngành Công nghệ Thông tin (IT) lại trở thành lựa chọn hàng đầu trong thời đại chuyển đổi số toàn cầu.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa placerat duis ultricies lacus sed turpis tincidunt id. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat. Erat nam at lectus urna duis convallis convallis. Purus faucibus ornare suspendisse sed nisi. Mauris rhoncus aenean vel elit. Dignissim convallis aenean et tortor at risus viverra adipiscing at. Tellus rutrum tellus pellentesque eu tincidunt tortor. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Eu mi bibendum neque egestas congue quisque.
+Ngành IT không chỉ đơn giản là viết mã – nó là một thế giới rộng lớn nơi công nghệ định hình tương lai. Trong bối cảnh chuyển đổi số đang diễn ra mạnh mẽ, IT trở thành trụ cột cho mọi lĩnh vực: từ giáo dục, y tế đến thương mại điện tử và giải trí. Học IT không chỉ mở ra cơ hội nghề nghiệp mà còn trao cho bạn quyền kiểm soát công nghệ.
 
-Nec ultrices dui sapien eget mi proin sed libero enim. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Aliquam id diam maecenas ultricies mi. Faucibus in ornare quam viverra. Nisi est sit amet facilisis magna etiam tempor orci eu. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Fermentum dui faucibus in ornare quam viverra orci sagittis eu. Cras pulvinar mattis nunc sed. Pharetra et ultrices neque ornare aenean euismod elementum. Urna duis convallis convallis tellus. Donec massa sapien faucibus et. Id faucibus nisl tincidunt eget nullam non. Quam pellentesque nec nam aliquam sem et tortor consequat.
+Tại sao nhiều người lựa chọn học IT? Đầu tiên, nhu cầu nhân lực trong lĩnh vực này đang tăng mạnh. Các công ty công nghệ lớn như Google, Microsoft, Amazon luôn tìm kiếm những kỹ sư tài năng để giải quyết các vấn đề phức tạp. Không chỉ các tập đoàn, mà cả các startup và doanh nghiệp vừa và nhỏ cũng cần người có kỹ năng IT để phát triển sản phẩm và tối ưu hóa quy trình.
 
-Ac auctor augue mauris augue neque. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Arcu ac tortor dignissim convallis aenean. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Porttitor eget dolor morbi non. Quis lectus nulla at volutpat diam ut venenatis tellus. Ultricies leo integer malesuada nunc vel risus. Facilisis sed odio morbi quis commodo odio aenean.
+Tiếp theo, học IT mang đến sự linh hoạt trong công việc. Bạn có thể làm từ xa, làm freelancer, hay tự phát triển sản phẩm riêng. Nhiều người đã bắt đầu từ những dự án nhỏ, blog cá nhân hoặc ứng dụng di động, sau đó phát triển thành công ty riêng. Chỉ cần bạn có kiến thức, ý tưởng và tinh thần học hỏi không ngừng.
 
-Commodo ullamcorper a lacus vestibulum sed arcu non odio euismod. Sit amet cursus sit amet dictum sit amet justo. Euismod lacinia at quis risus sed vulputate odio ut. Malesuada pellentesque elit eget gravida. Diam donec adipiscing tristique risus nec. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Nibh ipsum consequat nisl vel. Sit amet consectetur adipiscing elit. Porta nibh venenatis cras sed felis eget. A condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Orci phasellus egestas tellus rutrum. Ac felis donec et odio pellentesque diam volutpat commodo sed. Viverra nam libero justo laoreet sit amet cursus sit amet. Duis at consectetur lorem donec massa sapien faucibus. Et leo duis ut diam quam nulla porttitor massa. Eros donec ac odio tempor. Massa ultricies mi quis hendrerit. Semper quis lectus nulla at volutpat diam ut venenatis.
+Ngoài ra, IT còn giúp rèn luyện kỹ năng giải quyết vấn đề. Khi lập trình hoặc thiết kế hệ thống, bạn phải tư duy logic, tìm ra giải pháp tối ưu cho từng tình huống. Điều này không chỉ giúp ích trong công việc mà còn cải thiện khả năng suy nghĩ và phản xạ trong cuộc sống hàng ngày.
 
-Urna condimentum mattis pellentesque id nibh tortor id aliquet. Mollis nunc sed id semper risus in. Morbi blandit cursus risus at ultrices mi. Lectus vestibulum mattis ullamcorper velit. Facilisis mauris sit amet massa vitae tortor. Ullamcorper sit amet risus nullam. Nunc sed blandit libero volutpat sed. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Convallis convallis tellus id interdum velit laoreet id. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Non nisi est sit amet facilisis magna etiam tempor. Nisl nunc mi ipsum faucibus vitae.
+Học IT không yêu cầu phải là thiên tài toán học hay đã có nền tảng từ trước. Có rất nhiều tài nguyên học tập miễn phí trên mạng, từ video YouTube, khóa học MOOC cho đến tài liệu mã nguồn mở. Quan trọng là bạn có đam mê, kiên trì và sẵn sàng thử sai để tiến bộ.
+
+Nếu bạn đang phân vân lựa chọn con đường sự nghiệp, hãy xem xét đến IT – một lĩnh vực vừa thử thách vừa đầy tiềm năng. Hãy bắt đầu bằng những điều đơn giản, như học HTML, CSS, JavaScript, hoặc tìm hiểu về cách hoạt động của một trang web. Đó là bước khởi đầu cho hành trình chinh phục thế giới công nghệ.

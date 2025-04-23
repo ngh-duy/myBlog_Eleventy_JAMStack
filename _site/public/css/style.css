@@ -77,6 +77,7 @@
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    font-family: var(--ff-body); /* Roboto */
   }
   
   /* A elements that don't have a class get default styles */
@@ -210,6 +211,18 @@
     background-color: #ffffff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   }
+  @keyframes scrollLoop {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-scroll-horizontal {
+    animation: scrollLoop 30s linear infinite;
+  }
   
   .page-header__content {
     display: flex;
@@ -217,10 +230,10 @@
     
   }
   .page-header__content >div >a,i,span{
-    font-size: 35px;
+    font-size: 15px;
     justify-content: center;
     text-decoration: none;
-    font-family: "Dancing Script", cursive;
+    /* font-family: "Dancing Script", cursive; */
     font-weight: 20px;
     font-style: normal;
   }
@@ -300,7 +313,24 @@
     background-color: var(--clr-primary-500);
     text-align: center;
   }
-  
+  .feature-text,
+.feature-box,
+.service-card,
+.portfolio-item,
+.snippet,
+.snippet__meta,
+.snippet__title,
+.main-article,
+.section,
+.section-title,
+.nav-list,
+.btn,
+.feature-section,
+.feature-content,
+.company-wrapper {
+  font-family: var(--ff-body) !important;
+}
+
   /* //////////////////////
     Homepage
     /////////////////////// */

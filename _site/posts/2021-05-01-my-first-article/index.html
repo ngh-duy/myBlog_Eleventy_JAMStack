@@ -1,102 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta
-    name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700..900&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="/public/css/style.css"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>My First Article | Kevin's blog</title>
-   <!-- fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <!-- Css animation -->
-   <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <!-- SWiperSWiper -->
- <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>Giới thiệu về lĩnh vực IT hiện đại | Kevin's blog</title>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700..900&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              playfair: ['Playfair Display', 'serif'],
+              roboto: ['Roboto', 'sans-serif'],
+              condensed: ['Roboto Condensed', 'sans-serif'],
+              script: ['Dancing Script', 'cursive'],
+            },
+          },
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: '1rem',
+              sm: '2rem',
+              lg: '4rem',
+              xl: '5rem',
+              '2xl': '6rem',
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/public/css/style.css" />
   </head>
-  <body>
-    
-    <header class="page-header">
-  <div class="container">
-    <div class="page-header__content">
-      <div>
-        <a href="/">
-         <i class="fa-solid fa-compass-drafting"></i>
-         <span >My Home</span>
+
+  <body class="bg-white text-gray-800 font-roboto antialiased">
+    <header class="bg-white shadow-sm text-gray-800 py-4">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between flex-wrap gap-4">
+      
+      <!-- Logo / Tên -->
+      <div class="flex items-center gap-2 text-xl font-semibold">
+        <a href="/" class="flex items-center gap-2 text-gray-800 hover:text-blue-600 transition">
+          <i class="fa-solid fa-compass-drafting text-blue-500"></i>
+          <span>My Home</span>
         </a>
       </div>
-      <div class="search-box">
-            <input type="text" placeholder="Search..." />
-            <span class="search-icon">
-                🔍
-            </span>
-        </div>
 
+      <!-- Navigation -->
       <nav>
-        
-        <ul role="list" class="nav-list flex-group">
+        <ul class="flex gap-6 text-sm sm:text-base font-medium">
           <li>
-            <a href="/">Home</a>
+            <a href="/" class="hover:text-blue-600 transition">Home</a>
           </li>
           <li>
-            <a href="/blog/">Blog</a>
+            <a href="/blog/" class="hover:text-blue-600 transition">Blog</a>
           </li>
           <li>
-            <a href="/portfolio/">Portfolio</a>
+            <a href="/portfolio/" class="hover:text-blue-600 transition">Portfolio</a>
           </li>
         </ul>
       </nav>
+      
     </div>
   </div>
 </header>
-    <main>
+
+
+    <main class="min-h-screen">
       
-      
-<article class="main-article">
-  <div class="container container--narrow flow">
-    <h1 class="article-title">
-      My First Article
+<article class="main-article py-12 font-roboto">
+  <div class="container max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight text-center">
+      Giới thiệu về lĩnh vực IT hiện đại
     </h1>
-    <figure class="main-article__figure">
-      <img src="https://wphtml.com/html/tf/chorbi/assets/img/bg/2.jpg" alt="This is a test">
-      <figcaption>
+
+    <figure class="w-full text-center">
+      <img
+        src="https://wphtml.com/html/tf/chorbi/assets/img/bg/1.jpg"
+        alt="This is a test"
+        class="mx-auto rounded-lg shadow-md max-h-[500px] object-cover w-full"
+      />
+      <figcaption class="mt-4 text-sm text-gray-500 dark:text-gray-400 italic">
         This is a test
       </figcaption>
     </figure>
-    
-    <!-- Nội dung chính của bài viết -->
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan lacus vel. Donec ultrices tincidunt arcu non sodales. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Pretium quam vulputate dignissim suspendisse in est. Lobortis mattis aliquam faucibus purus in massa tempor nec. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Vulputate eu scelerisque felis imperdiet proin. Nisl nisi scelerisque eu ultrices.</p>
-<p>Enim nulla aliquet porttitor lacus luctus accumsan. Vulputate mi sit amet mauris commodo quis. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Placerat orci nulla pellentesque dignissim. Consequat mauris nunc congue nisi. Nec nam aliquam sem et tortor consequat. Consequat semper viverra nam libero justo laoreet sit amet. Id interdum velit laoreet id donec. Turpis in eu mi bibendum neque. Tincidunt vitae semper quis lectus. Suscipit adipiscing bibendum est ultricies integer quis auctor. Posuere urna nec tincidunt praesent semper. Sagittis id consectetur purus ut faucibus pulvinar elementum. Diam maecenas ultricies mi eget mauris. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Dui sapien eget mi proin sed.</p>
-<p>In iaculis nunc sed augue lacus. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Consectetur adipiscing elit ut aliquam. Tortor consequat id porta nibh venenatis cras sed. Integer enim neque volutpat ac tincidunt. Pellentesque pulvinar pellentesque habitant morbi. Ut enim blandit volutpat maecenas. Risus quis varius quam quisque id. Turpis tincidunt id aliquet risus. Congue eu consequat ac felis donec.</p>
-<p>Aliquam vestibulum morbi blandit cursus risus at. Malesuada fames ac turpis egestas sed tempus. Donec et odio pellentesque diam volutpat commodo sed egestas egestas. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus. Enim diam vulputate ut pharetra sit amet aliquam. Est ante in nibh mauris cursus mattis. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Nec ultrices dui sapien eget mi proin sed libero enim. Sed sed risus pretium quam vulputate. Sit amet luctus venenatis lectus magna.</p>
-<p>Mauris nunc congue nisi vitae suscipit tellus mauris. Vitae et leo duis ut. Arcu cursus euismod quis viverra nibh. Amet mauris commodo quis imperdiet. Condimentum lacinia quis vel eros donec. Enim neque volutpat ac tincidunt vitae semper quis lectus nulla. Faucibus nisl tincidunt eget nullam. Cursus metus aliquam eleifend mi in nulla. Ut placerat orci nulla pellentesque dignissim enim sit amet. Lobortis feugiat vivamus at augue eget arcu dictum. Nunc faucibus a pellentesque sit amet porttitor. Quis varius quam quisque id diam vel quam elementum pulvinar.</p>
 
-    
+    <!-- Nội dung chính của bài viết -->
+    <div class="prose prose-lg dark:prose-invert max-w-none">
+      <p>Ngành Công nghệ Thông tin (IT) đã trở thành một phần không thể thiếu trong cuộc sống hiện đại. Từ các ứng dụng di động cho đến hệ thống đám mây, IT đang làm thay đổi cách chúng ta sống, học tập và làm việc. Đây là lĩnh vực phát triển nhanh chóng, luôn cần những con người sáng tạo và giải quyết vấn đề linh hoạt.</p>
+<p>Một trong những xu hướng nổi bật là sự phát triển của trí tuệ nhân tạo (AI), học máy (Machine Learning), và dữ liệu lớn (Big Data). Những công nghệ này đang được ứng dụng rộng rãi trong y tế, tài chính, sản xuất và giáo dục. IT không chỉ là viết mã mà còn là hiểu người dùng, thiết kế trải nghiệm, và tối ưu hiệu suất.</p>
+<p>Ngành này cũng mở ra vô số cơ hội nghề nghiệp hấp dẫn. Từ lập trình viên, quản trị hệ thống, đến chuyên gia an ninh mạng, mỗi vai trò đều đóng vai trò quan trọng trong việc xây dựng và duy trì các hệ thống số. Với sự linh hoạt trong làm việc từ xa, nhiều người đã lựa chọn con đường freelancer hay remote working để phát triển sự nghiệp của mình.</p>
+<p>Việc học tập và cập nhật kiến thức liên tục là yếu tố sống còn. Các nền tảng học trực tuyến, các cộng đồng mã nguồn mở, và những buổi meetup công nghệ là nơi lý tưởng để mở rộng kỹ năng và kết nối với cộng đồng. Ngoài ra, khả năng làm việc nhóm và giao tiếp hiệu quả cũng ngày càng được đánh giá cao trong môi trường làm việc IT.</p>
+<p>Dù là người mới bắt đầu hay đã có kinh nghiệm, việc tìm hiểu sâu hơn về các công nghệ mới sẽ giúp bạn định hướng tốt hơn trong hành trình sự nghiệp. Đừng ngần ngại thử sức với các dự án cá nhân hoặc đóng góp vào các dự án mã nguồn mở – đây là cách tuyệt vời để học hỏi và nâng cao năng lực thực tiễn.</p>
+<p>Hãy theo dõi blog để cập nhật thêm nhiều bài viết bổ ích về kiến thức IT, kỹ năng nghề nghiệp, cũng như những chia sẻ thực tế từ các chuyên gia trong ngành!</p>
+
+    </div>
   </div>
 </article>
 
     </main>
-    
-    <footer class="site-footer">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 26.6" class="logo" width="8rem" fill="var(--logo-color, #000)">
-  <path d="M32.4 8.1h2.9v11.7h-2.9V8.1zm4 7.3c0-2.9 1.8-4.6 4.5-4.6s4.5 1.7 4.5 4.6-1.7 4.7-4.5 4.7-4.5-1.7-4.5-4.7zm6.2 0c0-1.6-.6-2.5-1.6-2.5s-1.6.9-1.6 2.5.6 2.5 1.6 2.5 1.6-.8 1.6-2.5zm4 5h2.8c.3.6.9 1 1.6.9 1.1 0 1.7-.6 1.7-1.5v-1.6c-.5 1-1.6 1.7-2.7 1.6-2.1 0-3.5-1.6-3.5-4.4s1.3-4.5 3.6-4.5c1.2-.1 2.3.6 2.7 1.7h-.1V11h2.9v8.8c0 2.1-1.9 3.4-4.6 3.4-2.6 0-4.2-1.1-4.4-2.8zm6-5c0-1.4-.6-2.3-1.7-2.3s-1.7.9-1.7 2.3.6 2.2 1.7 2.2 1.7-.7 1.7-2.2zm4 0c0-2.9 1.8-4.6 4.5-4.6s4.5 1.7 4.5 4.6-1.7 4.7-4.5 4.7-4.4-1.7-4.5-4.7zm6.2 0c0-1.6-.6-2.5-1.6-2.5s-1.6.9-1.6 2.5.6 2.5 1.6 2.5 1.6-.8 1.6-2.5zm4-6.5c0-.8.6-1.5 1.4-1.5.8 0 1.5.6 1.5 1.4 0 .8-.6 1.5-1.4 1.5h-.1c-.7 0-1.4-.6-1.4-1.4zm0 2.1h2.9v8.9h-2.9V11zm13.5 4.4c0 2.9-1.3 4.6-3.5 4.6-1.2.1-2.2-.6-2.7-1.6H74v4.4h-2.9V11H74v1.6c.4-1.1 1.5-1.8 2.7-1.7 2.3 0 3.6 1.6 3.6 4.5zm-3 0c0-1.4-.7-2.3-1.7-2.3s-1.7.9-1.7 2.3.6 2.3 1.7 2.3 1.8-.8 1.7-2.3zm7.9-4.6c2.4 0 3.9 1.1 3.9 3h-2.6c0-.6-.5-1-1.3-1s-1.2.2-1.2.7c0 .5.3.6 1 .7l1.9.4c1.8.4 2.5 1.1 2.5 2.4 0 1.8-1.7 3-4.1 3s-4.1-1.2-4.2-3h2.8c.1.7.6 1 1.4 1s1.2-.3 1.2-.7c0-.5-.3-.6-1-.7l-1.7-.4c-1.7-.4-2.6-1.3-2.6-2.6.1-1.7 1.6-2.8 4-2.8zM99 19.9h-2.8v-1.7h-.1c-.3 1.1-1.4 1.9-2.6 1.8-1.7.1-3.1-1.3-3.2-3v-6h2.9v5.1c0 1 .5 1.6 1.4 1.6.8 0 1.5-.7 1.5-1.5V11H99v8.9zm1.4-8.9h2.8v1.7h.1c.3-1.1 1.4-1.9 2.5-1.9 1.2-.1 2.3.7 2.5 1.9h.1c.4-1.2 1.5-1.9 2.7-1.9 1.5-.1 2.9 1.1 2.9 2.7v6.3h-2.9v-5.3c0-.9-.4-1.4-1.2-1.4-.7 0-1.3.5-1.3 1.2v5.5h-2.8v-5.3c0-.9-.4-1.4-1.2-1.4-.7 0-1.3.6-1.3 1.3v5.4h-2.9V11zM26.7 8.9c0-4.9-4-8.9-8.9-8.9-2.5 0-4.9 1-6.6 2.9H0v23.7h23.7V15.5c1.9-1.7 3-4.1 3-6.6zm-4.6 0c0 2.4-1.9 4.3-4.3 4.3s-4.3-1.9-4.3-4.3 1.9-4.3 4.3-4.3 4.3 1.9 4.3 4.3zM19.2 22H4.6V7.4H9c-.1.5-.1 1-.1 1.4 0 4.9 4 8.9 8.9 8.9.5 0 .9 0 1.4-.1V22z"></path>
-</svg>
-  <p>© 2020 Company Name. All rights reserved.</p>
+
+    <footer class="site-footer bg-gray-900 text-white py-6 mt-12">
+  <div class="container max-w-7xl mx-auto px-4 text-center">
+    <p class="text-sm sm:text-base">
+      © 2025 <strong class="font-semibold text-blue-400">HDUY Dev</strong> – Blog & Dự án IT. All rights reserved.
+    </p>
+  </div>
 </footer>
+
+
     <script src="/public/js/script.js"></script>
   </body>
 </html>

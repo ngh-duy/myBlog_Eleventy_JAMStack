@@ -1,114 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta
-    name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700..900&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="/public/css/style.css"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Trang chủ | Kevin's blog</title>
-   <!-- fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <!-- Css animation -->
-   <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <!-- SWiperSWiper -->
- <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700..900&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              playfair: ['Playfair Display', 'serif'],
+              roboto: ['Roboto', 'sans-serif'],
+              condensed: ['Roboto Condensed', 'sans-serif'],
+              script: ['Dancing Script', 'cursive'],
+            },
+          },
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: '1rem',
+              sm: '2rem',
+              lg: '4rem',
+              xl: '5rem',
+              '2xl': '6rem',
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/public/css/style.css" />
   </head>
-  <body>
-    
-    <header class="page-header">
-  <div class="container">
-    <div class="page-header__content">
-      <div>
-        <a href="/">
-         <i class="fa-solid fa-compass-drafting"></i>
-         <span >My Home</span>
+
+  <body class="bg-white text-gray-800 font-roboto antialiased">
+    <header class="bg-white shadow-sm text-gray-800 py-4">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between flex-wrap gap-4">
+      
+      <!-- Logo / Tên -->
+      <div class="flex items-center gap-2 text-xl font-semibold">
+        <a href="/" class="flex items-center gap-2 text-gray-800 hover:text-blue-600 transition">
+          <i class="fa-solid fa-compass-drafting text-blue-500"></i>
+          <span>My Home</span>
         </a>
       </div>
-      <div class="search-box">
-            <input type="text" placeholder="Search..." />
-            <span class="search-icon">
-                🔍
-            </span>
-        </div>
 
+      <!-- Navigation -->
       <nav>
-        
-        <ul role="list" class="nav-list flex-group">
+        <ul class="flex gap-6 text-sm sm:text-base font-medium">
           <li>
-            <a href="/">Home</a>
+            <a href="/" class="hover:text-blue-600 transition">Home</a>
           </li>
           <li>
-            <a href="/blog/">Blog</a>
+            <a href="/blog/" class="hover:text-blue-600 transition">Blog</a>
           </li>
           <li>
-            <a href="/portfolio/">Portfolio</a>
+            <a href="/portfolio/" class="hover:text-blue-600 transition">Portfolio</a>
           </li>
         </ul>
       </nav>
+      
     </div>
   </div>
 </header>
-    <main>
+
+
+    <main class="min-h-screen">
       
-      
+<div class="font-roboto">
+
+<!-- Hero Section (Swiper) -->
 <section class="swiper hero">
   <div class="swiper-wrapper">
     
       <div class="swiper-slide">
-        <div class="introducde" style="background-image: url(https://wphtml.com/html/tf/chorbi/assets/img/bg/2.jpg);">
-          <div class="introduce-content">
-            <h1 class="animate__animated animate__backInDown">My First Article</h1>
-            <p class="animate__animated animate__backInDown">Kevin Powell</p>
-            <p style="width:60%; text-align:center;margin: 0 auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-            <button>Read more</button>
+        <div class="h-[500px] bg-cover bg-center flex items-center justify-center text-white text-center px-4" style="background-image: url(https://wphtml.com/html/tf/chorbi/assets/img/bg/2.jpg);">
+          <div class="space-y-4 bg-black/50 p-6 rounded-lg animate__animated animate__fadeIn">
+            <h1 class="text-2xl sm:text-3xl font-bold animate__backInDown">Bức tranh toàn cảnh ngành IT: Những điều bạn nên biết</h1>
+            <p class="text-lg font-medium animate__backInDown">Kevin Powell</p>
+            <p class="max-w-xl mx-auto text-sm">Tìm hiểu tổng quan về ngành Công nghệ Thông tin, bao gồm các mảng chính, tiềm năng phát triển và định hướng nghề nghiệp cho người mới bắt đầu.</p>
+            <a href="/posts/2021-06-15-my-fifth-article/">
+            <button  class="mt-4 px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition">Read more</button>
+            </a>
           </div>
         </div>
       </div>
     
       <div class="swiper-slide">
-        <div class="introducde" style="background-image: url(https://wphtml.com/html/tf/chorbi/assets/img/bg/1.jpg);">
-          <div class="introduce-content">
-            <h1 class="animate__animated animate__backInDown">My Second Article</h1>
-            <p class="animate__animated animate__backInDown">Kevin Powell</p>
-            <p style="width:60%; text-align:center;margin: 0 auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-            <button>Read more</button>
+        <div class="h-[500px] bg-cover bg-center flex items-center justify-center text-white text-center px-4" style="background-image: url(https://wphtml.com/html/tf/chorbi/assets/img/bg/1.jpg);">
+          <div class="space-y-4 bg-black/50 p-6 rounded-lg animate__animated animate__fadeIn">
+            <h1 class="text-2xl sm:text-3xl font-bold animate__backInDown">Giới thiệu về lĩnh vực IT hiện đại</h1>
+            <p class="text-lg font-medium animate__backInDown">Kevin Powell</p>
+            <p class="max-w-xl mx-auto text-sm">Một cái nhìn tổng quan về ngành Công nghệ Thông tin (IT) trong thời đại số: xu hướng, cơ hội nghề nghiệp, và tầm ảnh hưởng toàn cầu.</p>
+            <a href="/posts/2021-05-01-my-first-article/">
+            <button  class="mt-4 px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition">Read more</button>
+            </a>
           </div>
         </div>
       </div>
     
       <div class="swiper-slide">
-        <div class="introducde" style="background-image: url(https://wphtml.com/html/tf/chorbi/assets/img/bg/3.jpg);">
-          <div class="introduce-content">
-            <h1 class="animate__animated animate__backInDown">My Third Article</h1>
-            <p class="animate__animated animate__backInDown">Kevin Powell</p>
-            <p style="width:60%; text-align:center;margin: 0 auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-            <button>Read more</button>
+        <div class="h-[500px] bg-cover bg-center flex items-center justify-center text-white text-center px-4" style="background-image: url(https://wphtml.com/html/tf/chorbi/assets/img/bg/3.jpg);">
+          <div class="space-y-4 bg-black/50 p-6 rounded-lg animate__animated animate__fadeIn">
+            <h1 class="text-2xl sm:text-3xl font-bold animate__backInDown">Tại sao nên học IT trong thời đại số?</h1>
+            <p class="text-lg font-medium animate__backInDown">Kevin Powell</p>
+            <p class="max-w-xl mx-auto text-sm">Cùng tìm hiểu lý do vì sao ngành Công nghệ Thông tin (IT) lại trở thành lựa chọn hàng đầu trong thời đại chuyển đổi số toàn cầu.</p>
+            <a href="/posts/2021-05-15-my-second-article/">
+            <button  class="mt-4 px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition">Read more</button>
+            </a>
           </div>
         </div>
       </div>
     
       <div class="swiper-slide">
-        <div class="introducde" style="background-image: url(https://wphtml.com/html/tf/chorbi/assets/img/bg/1.jpg);">
-          <div class="introduce-content">
-            <h1 class="animate__animated animate__backInDown">My Fifth Article</h1>
-            <p class="animate__animated animate__backInDown">Kevin Powell</p>
-            <p style="width:60%; text-align:center;margin: 0 auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-            <button>Read more</button>
+        <div class="h-[500px] bg-cover bg-center flex items-center justify-center text-white text-center px-4" style="background-image: url(https://wphtml.com/html/tf/chorbi/assets/img/bg/1.jpg);">
+          <div class="space-y-4 bg-black/50 p-6 rounded-lg animate__animated animate__fadeIn">
+            <h1 class="text-2xl sm:text-3xl font-bold animate__backInDown">Những kỹ năng mềm cần thiết trong ngành IT</h1>
+            <p class="text-lg font-medium animate__backInDown">Kevin Powell</p>
+            <p class="max-w-xl mx-auto text-sm">Bên cạnh kỹ thuật chuyên môn, kỹ năng mềm đóng vai trò cực kỳ quan trọng trong sự nghiệp IT hiện đại. Cùng tìm hiểu những kỹ năng bạn nên rèn luyện ngay từ hôm nay.</p>
+            <a href="/posts/2021-06-01-my-fourth-article/">
+            <button  class="mt-4 px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition">Read more</button>
+            </a>
           </div>
         </div>
       </div>
@@ -116,166 +168,149 @@
   </div>
 </section>
 
-
-<section id="featured-articles" class="featured-articles">
-  <div class="container flow">
-    <h2 class="section-title text-center ">We are expert web agency</h2>
-    <hr class="center-line"/>
-    <p class="text-center">
-      It is a long established fact that a reader will be distracted by the readable content of a page when <br/> looking at its layout established fact that a reader will.
-    </p>
-  </div>
-  <div class="features-section">
-  <div class="feature-box">
-    <img src="https://wphtml.com/html/tf/chorbi/assets/img/service-icon/icon-1.png" alt="Responsive Icon">
-    <h3>Fully Responsive</h3>
-    <p>Lorem ipsum dolor sit amet consetetur diam sadipscing elitr sed diam nonumy eirmod.</p>
+<!-- Featured Articles -->
+<section id="featured-articles" class="py-16 px-4">
+  <div class="max-w-4xl mx-auto text-center space-y-4 mb-12">
+    <h2 class="text-2xl sm:text-3xl font-bold">Chuyên gia trong lĩnh vực phát triển web</h2>
+    <hr class="w-20 mx-auto border-blue-500" />
+    <p class="text-gray-600">Chúng tôi xây dựng những website tối ưu hiệu suất, dễ mở rộng và thân thiện với người dùng.<br/> Kết hợp giữa công nghệ hiện đại và trải nghiệm người dùng tốt nhất.</p>
   </div>
 
-  <div class="feature-box">
-    <img src="https://wphtml.com/html/tf/chorbi/assets/img/service-icon/icon-2.png" alt="Perfect For All">
-    <h3>Perfect For All</h3>
-    <p>Lorem ipsum dolor sit amet consetetur diam sadipscing elitr sed diam nonumy eirmod.</p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+    <div class="text-center bg-white rounded-lg shadow p-6 space-y-4">
+      <img src="https://wphtml.com/html/tf/chorbi/assets/img/service-icon/icon-1.png" alt="Responsive Icon" class="mx-auto h-16">
+      <h3 class="text-lg font-semibold">Hoàn toàn tương thích</h3>
+      <p class="text-gray-500 text-sm">Thiết kế giao diện thích ứng trên mọi thiết bị, từ máy tính bàn đến điện thoại di động.</p>
+    </div>
+    <div class="text-center bg-white rounded-lg shadow p-6 space-y-4">
+      <img src="https://wphtml.com/html/tf/chorbi/assets/img/service-icon/icon-2.png" alt="Perfect For All" class="mx-auto h-16">
+      <h3 class="text-lg font-semibold">Phù hợp mọi nhu cầu</h3>
+      <p class="text-gray-500 text-sm">Dễ dàng tùy biến theo nhu cầu của từng doanh nghiệp hoặc cá nhân, từ nhỏ đến lớn.</p>
+    </div>
+    <div class="text-center bg-white rounded-lg shadow p-6 space-y-4">
+      <img src="https://wphtml.com/html/tf/chorbi/assets/img/service-icon/icon-3.png" alt="Customizable" class="mx-auto h-16">
+      <h3 class="text-lg font-semibold">Dễ dàng tuỳ chỉnh</h3>
+      <p class="text-gray-500 text-sm">Giao diện và nội dung được tổ chức rõ ràng, giúp việc cập nhật dễ dàng và nhanh chóng.</p>
+    </div>
+    <div class="text-center bg-white rounded-lg shadow p-6 space-y-4">
+      <img src="https://wphtml.com/html/tf/chorbi/assets/img/service-icon/icon-4.png" alt="Support" class="mx-auto h-16">
+      <h3 class="text-lg font-semibold">Hỗ trợ 24/7</h3>
+      <p class="text-gray-500 text-sm">Đội ngũ kỹ thuật luôn sẵn sàng hỗ trợ và xử lý sự cố bất kỳ lúc nào bạn cần.</p>
+    </div>
   </div>
+</section>
 
-  <div class="feature-box">
-    <img src="https://wphtml.com/html/tf/chorbi/assets/img/service-icon/icon-3.png" alt="Customizable">
-    <h3>Easy To Customize</h3>
-    <p>Lorem ipsum dolor sit amet consetetur diam sadipscing elitr sed diam nonumy eirmod.</p>
-  </div>
+<!-- Feature Highlight -->
+<section class="py-20 bg-gray-100">
+  <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 px-4">
+    <div class="w-full lg:w-1/2">
+      <img src="https://wphtml.com/html/tf/chorbi/assets/img/team/team2.jpg" alt="Happy student" class="rounded-lg shadow-lg w-full max-w-md mx-auto">
+    </div>
+    <div class="w-full lg:w-1/2 space-y-6">
+      <h2 class="text-2xl sm:text-3xl font-bold">Quản lý toàn bộ nội dung<br>trên một nền tảng</span></h2>
+      <p class="text-gray-600">Hệ thống quản trị nội dung tích hợp giúp bạn dễ dàng cập nhật blog, trang giới thiệu, và sản phẩm mà không cần chỉnh sửa mã nguồn.</p>
 
-  <div class="feature-box">
-    <img src="https://wphtml.com/html/tf/chorbi/assets/img/service-icon/icon-4.png" alt="Support">
-    <h3>24/7 Support</h3>
-    <p>Lorem ipsum dolor sit amet consetetur diam sadipscing elitr sed diam nonumy eirmod.</p>
+      <div class="flex items-start gap-6">
+        <img src="https://wphtml.com/html/tf/chorbi/assets/img/award.png" alt="Trophy" class="w-24 h-auto">
+        <div>
+          <h4 class="font-bold text-lg">GIẢI THƯỞNG QUỐC TẾ 2024</h4>
+          <p class="text-gray-500 text-sm">VỚI HƠN 30 NĂM KINH NGHIỆM - giải thưởng danh giá trong thiết kế web.</p>
+        </div>
+      </div>
+
+      <a href="#" class="inline-block mt-4 px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Tìm hiểu thêm</a>
+    </div>
   </div>
+</section>
+
+<!-- Service Section -->
+<section class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-2xl sm:text-3xl font-bold text-blue-500">Dịch vụ của chúng tôi</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mt-4">Chúng tôi cung cấp các dịch vụ chuyên sâu trong lĩnh vực phát triển web, tối ưu SEO và marketing kỹ thuật số.</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md text-center space-y-3">
+        <i class="text-4xl text-blue-700 fa-beat fa-solid fa-laptop-file"></i>
+        <h3 class="text-lg font-semibold">Phân tích Website</h3>
+        <p class="text-sm text-gray-600">Đánh giá tổng quan hiệu suất, SEO, giao diện và UX của website để cải thiện toàn diện.</p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md text-center space-y-3">
+        <i class="text-4xl text-blue-700 fa-beat fa-solid fa-file-zipper"></i>
+        <h3 class="text-lg font-semibold">Dịch vụ Backlink</h3>
+        <p class="text-sm text-gray-600">Xây dựng liên kết chất lượng giúp tăng thứ hạng SEO và cải thiện độ uy tín website.</p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md text-center space-y-3">
+        <i class="text-4xl text-blue-700 fa-beat fa-solid fa-cloud"></i>
+        <h3 class="text-lg font-semibold">Tối ưu SEO</h3>
+        <p class="text-sm text-gray-600">Chiến lược tối ưu nội dung và kỹ thuật để nâng cao vị trí từ khóa trên Google.</p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md text-center space-y-3">
+        <i class="text-4xl text-blue-700 fa-beat fa-solid fa-truck-fast"></i>
+        <h3 class="text-lg font-semibold">Amazon Affiliate</h3>
+        <p class="text-sm text-gray-600">Thiết kế landing page cho tiếp thị liên kết Amazon để tăng tỉ lệ chuyển đổi.</p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md text-center space-y-3">
+        <i class="text-4xl text-blue-700 fa-beat fa-solid fa-house-tsunami"></i>
+        <h3 class="text-lg font-semibold">Quảng cáo trả phí</h3>
+        <p class="text-sm text-gray-600">Triển khai các chiến dịch Google Ads, Facebook Ads hiệu quả theo ngân sách tối ưu.</p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md text-center space-y-3">
+        <i class="text-4xl text-blue-700 fa-beat fa-brands fa-aws"></i>
+        <h3 class="text-lg font-semibold">Dịch vụ tiếp cận</h3>
+        <p class="text-sm text-gray-600">Tiếp cận khách hàng tiềm năng thông qua chiến lược nội dung và email marketing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Company Logos -->
+<section class="bg-gray-50 py-12">
+  <div class="max-w-6xl mx-auto px-4 text-center space-y-8">
+    <h2 class="text-xl sm:text-2xl font-semibold text-gray-800">
+      Được hơn 1.000+ doanh nghiệp toàn cầu tin tưởng
+    </h2>
+    <div class="overflow-hidden relative">
+      <div class="logo-track animate-scroll-horizontal flex gap-10 whitespace-nowrap">
+        
+          <img src="/public/images/logo1.svg" alt="This is a test" class="h-8 w-auto object-contain" />
+        
+          <img src="/public/images/logo2.png" alt="This is a test" class="h-8 w-auto object-contain" />
+        
+          <img src="/public/images/logo3.png" alt="This is a test" class="h-8 w-auto object-contain" />
+        
+          <img src="/public/images/logo4.png" alt="This is a test" class="h-8 w-auto object-contain" />
+        
+          <img src="/public/images/logo4.svg" alt="This is a test" class="h-8 w-auto object-contain" />
+        
+        
+          <img src="/public/images/logo1.svg" alt="This is a test" class="h-8 w-auto object-contain" />
+        
+          <img src="/public/images/logo2.png" alt="This is a test" class="h-8 w-auto object-contain" />
+        
+          <img src="/public/images/logo3.png" alt="This is a test" class="h-8 w-auto object-contain" />
+        
+          <img src="/public/images/logo4.png" alt="This is a test" class="h-8 w-auto object-contain" />
+        
+          <img src="/public/images/logo4.svg" alt="This is a test" class="h-8 w-auto object-contain" />
+        
+      </div>
+    </div>
+  </div>
+</section>
+
 </div>
-
-</section>
-<section class="feature-section">
-  <div class="container">
-    <div class="feature-content">
-      <div class="feature-image">
-        <img src="https://wphtml.com/html/tf/chorbi/assets/img/team/team2.jpg" alt="Happy student" width="410">
-      </div>
-
-      <div class="feature-text">
-        <h2>Manage everything<br><strong>in one place</strong></h2>
-        <p class="description">
-          There are many variations of passages of Lorem Ipsum available,
-          but the majority have suffered alteration in some form,
-          by injected humour, or randomised words which don't look even slightly believable.
-        </p>
-
-        <div class="award-box">
-          <img src="https://wphtml.com/html/tf/chorbi/assets/img/award.png" alt="Trophy" class="award-icon" width="800">
-          <div>
-            <h4><strong>INTERNATIONAL AWARDS 2024</strong><br>WITH 30 YEARS OF EXPERIENCE</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-          </div>
-        </div>
-
-        <a href="#" class="btn">Know More</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="service-section">
-  <div class="container">
-    <h2 class="section-title" style="color: aqua">Our Service</h2>
-    <p class="section-subtitle">
-      It is a long established fact that a reader will be distracted by the readable content of a page when
-      looking at its layout established fact that a reader will.
-    </p>
-
-    <div class="services-grid">
-      <div class="service-card">
-        <i class="fa-solid fa-laptop-file fa-beat" style="color: #2b0990;"></i>
-        <h3>Website Audit</h3>
-        <br/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae accusantium consectetur.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa-solid fa-file-zipper fa-beat" style="color: #2b0990;"></i>
-        <h3>Backlink Service</h3>
-           <br/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae accusantium consectetur.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa-solid fa-cloud fa-beat" style="color: #2b0990;"></i>
-        <h3>SEO Service</h3>
-           <br/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae accusantium consectetur.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa-solid fa-truck-fast fa-beat" style="color: #2b0990;"></i>
-        <h3>Amazon Affiliate</h3>
-           <br/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae accusantium consectetur.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa-solid fa-house-tsunami fa-beat" style="color: #2b0990;"></i>
-        <h3>Paid Media</h3>
-           <br/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae accusantium consectetur.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa-brands fa-aws fa-beat" style="color: #2b0990;"></i>
-        <h3>Outreach Service</h3>
-           <br/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae accusantium consectetur.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="company">
-  <div class="company-wrapper">
-    <h2>Trusted By 1k+ Company Around The World!</h2>
-
-    <div class="logo-slider">
-      <div class="logo-track">
-        
-          <img src="/public/images/logo1.svg" alt="This is a test" />
-        
-          <img src="/public/images/logo2.png" alt="This is a test" />
-        
-          <img src="/public/images/logo3.png" alt="This is a test" />
-        
-          <img src="/public/images/logo4.png" alt="This is a test" />
-        
-          <img src="/public/images/logo4.svg" alt="This is a test" />
-        
-        
-          <img src="/public/images/logo1.svg" alt="This is a test" />
-        
-          <img src="/public/images/logo2.png" alt="This is a test" />
-        
-          <img src="/public/images/logo3.png" alt="This is a test" />
-        
-          <img src="/public/images/logo4.png" alt="This is a test" />
-        
-          <img src="/public/images/logo4.svg" alt="This is a test" />
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-
     </main>
-    
-    <footer class="site-footer">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 26.6" class="logo" width="8rem" fill="var(--logo-color, #000)">
-  <path d="M32.4 8.1h2.9v11.7h-2.9V8.1zm4 7.3c0-2.9 1.8-4.6 4.5-4.6s4.5 1.7 4.5 4.6-1.7 4.7-4.5 4.7-4.5-1.7-4.5-4.7zm6.2 0c0-1.6-.6-2.5-1.6-2.5s-1.6.9-1.6 2.5.6 2.5 1.6 2.5 1.6-.8 1.6-2.5zm4 5h2.8c.3.6.9 1 1.6.9 1.1 0 1.7-.6 1.7-1.5v-1.6c-.5 1-1.6 1.7-2.7 1.6-2.1 0-3.5-1.6-3.5-4.4s1.3-4.5 3.6-4.5c1.2-.1 2.3.6 2.7 1.7h-.1V11h2.9v8.8c0 2.1-1.9 3.4-4.6 3.4-2.6 0-4.2-1.1-4.4-2.8zm6-5c0-1.4-.6-2.3-1.7-2.3s-1.7.9-1.7 2.3.6 2.2 1.7 2.2 1.7-.7 1.7-2.2zm4 0c0-2.9 1.8-4.6 4.5-4.6s4.5 1.7 4.5 4.6-1.7 4.7-4.5 4.7-4.4-1.7-4.5-4.7zm6.2 0c0-1.6-.6-2.5-1.6-2.5s-1.6.9-1.6 2.5.6 2.5 1.6 2.5 1.6-.8 1.6-2.5zm4-6.5c0-.8.6-1.5 1.4-1.5.8 0 1.5.6 1.5 1.4 0 .8-.6 1.5-1.4 1.5h-.1c-.7 0-1.4-.6-1.4-1.4zm0 2.1h2.9v8.9h-2.9V11zm13.5 4.4c0 2.9-1.3 4.6-3.5 4.6-1.2.1-2.2-.6-2.7-1.6H74v4.4h-2.9V11H74v1.6c.4-1.1 1.5-1.8 2.7-1.7 2.3 0 3.6 1.6 3.6 4.5zm-3 0c0-1.4-.7-2.3-1.7-2.3s-1.7.9-1.7 2.3.6 2.3 1.7 2.3 1.8-.8 1.7-2.3zm7.9-4.6c2.4 0 3.9 1.1 3.9 3h-2.6c0-.6-.5-1-1.3-1s-1.2.2-1.2.7c0 .5.3.6 1 .7l1.9.4c1.8.4 2.5 1.1 2.5 2.4 0 1.8-1.7 3-4.1 3s-4.1-1.2-4.2-3h2.8c.1.7.6 1 1.4 1s1.2-.3 1.2-.7c0-.5-.3-.6-1-.7l-1.7-.4c-1.7-.4-2.6-1.3-2.6-2.6.1-1.7 1.6-2.8 4-2.8zM99 19.9h-2.8v-1.7h-.1c-.3 1.1-1.4 1.9-2.6 1.8-1.7.1-3.1-1.3-3.2-3v-6h2.9v5.1c0 1 .5 1.6 1.4 1.6.8 0 1.5-.7 1.5-1.5V11H99v8.9zm1.4-8.9h2.8v1.7h.1c.3-1.1 1.4-1.9 2.5-1.9 1.2-.1 2.3.7 2.5 1.9h.1c.4-1.2 1.5-1.9 2.7-1.9 1.5-.1 2.9 1.1 2.9 2.7v6.3h-2.9v-5.3c0-.9-.4-1.4-1.2-1.4-.7 0-1.3.5-1.3 1.2v5.5h-2.8v-5.3c0-.9-.4-1.4-1.2-1.4-.7 0-1.3.6-1.3 1.3v5.4h-2.9V11zM26.7 8.9c0-4.9-4-8.9-8.9-8.9-2.5 0-4.9 1-6.6 2.9H0v23.7h23.7V15.5c1.9-1.7 3-4.1 3-6.6zm-4.6 0c0 2.4-1.9 4.3-4.3 4.3s-4.3-1.9-4.3-4.3 1.9-4.3 4.3-4.3 4.3 1.9 4.3 4.3zM19.2 22H4.6V7.4H9c-.1.5-.1 1-.1 1.4 0 4.9 4 8.9 8.9 8.9.5 0 .9 0 1.4-.1V22z"></path>
-</svg>
-  <p>© 2020 Company Name. All rights reserved.</p>
+
+    <footer class="site-footer bg-gray-900 text-white py-6 mt-12">
+  <div class="container max-w-7xl mx-auto px-4 text-center">
+    <p class="text-sm sm:text-base">
+      © 2025 <strong class="font-semibold text-blue-400">HDUY Dev</strong> – Blog & Dự án IT. All rights reserved.
+    </p>
+  </div>
 </footer>
+
+
     <script src="/public/js/script.js"></script>
   </body>
 </html>

@@ -1,19 +1,24 @@
 ---
 layout: post.njk
-title: My Fourth Article
+title: Những kỹ năng mềm cần thiết trong ngành IT
 author: Kevin Powell
-date: 2021-06-01
-image: https://wphtml.com/html/tf/chorbi/assets/img/bg/2.jpg
+date: 2021-06-15
+tags: ["post", "featured"]
+image: https://wphtml.com/html/tf/chorbi/assets/img/bg/1.jpg
 imageAlt: This is a test
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
+description: Bên cạnh kỹ thuật chuyên môn, kỹ năng mềm đóng vai trò cực kỳ quan trọng trong sự nghiệp IT hiện đại. Cùng tìm hiểu những kỹ năng bạn nên rèn luyện ngay từ hôm nay.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In mollis nunc sed id semper risus in. Elit eget gravida cum sociis natoque penatibus. Enim facilisis gravida neque convallis a cras semper. Eget nulla facilisi etiam dignissim diam quis. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Quisque id diam vel quam elementum pulvinar etiam. Congue mauris rhoncus aenean vel elit scelerisque mauris. Amet risus nullam eget felis eget nunc. Tellus in hac habitasse platea dictumst. Maecenas accumsan lacus vel facilisis volutpat. Lorem ipsum dolor sit amet consectetur adipiscing. A scelerisque purus semper eget duis at tellus at. Magna fringilla urna porttitor rhoncus dolor purus non. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
+Ngành Công nghệ Thông tin không chỉ yêu cầu kỹ năng kỹ thuật như lập trình, xử lý dữ liệu hay quản lý hệ thống, mà còn đòi hỏi những kỹ năng mềm giúp bạn làm việc hiệu quả và phát triển lâu dài. Những kỹ năng này đôi khi còn quan trọng hơn cả kiến thức chuyên môn, đặc biệt trong môi trường làm việc hiện đại, nơi tính hợp tác và giao tiếp là then chốt.
 
-Donec adipiscing tristique risus nec feugiat in fermentum. Feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Duis at tellus at urna condimentum. Commodo odio aenean sed adipiscing diam donec adipiscing. Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Augue eget arcu dictum varius. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Ut tellus elementum sagittis vitae. Semper risus in hendrerit gravida rutrum. Eu sem integer vitae justo eget. Urna id volutpat lacus laoreet non curabitur gravida. Tempus imperdiet nulla malesuada pellentesque. Est pellentesque elit ullamcorper dignissim.
+**Kỹ năng giao tiếp** là một trong những kỹ năng hàng đầu. Dù bạn là developer hay tester, khả năng trình bày ý tưởng, báo cáo tiến độ hoặc giải thích vấn đề với team là điều không thể thiếu. Trong môi trường Agile, việc giao tiếp rõ ràng giúp mọi người hiểu nhau và làm việc ăn ý hơn.
 
-Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Netus et malesuada fames ac. Tortor pretium viverra suspendisse potenti. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Quis vel eros donec ac odio tempor. Auctor urna nunc id cursus metus aliquam eleifend mi in. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Turpis massa tincidunt dui ut. Eu facilisis sed odio morbi quis commodo. Pellentesque habitant morbi tristique senectus et netus et. Facilisis volutpat est velit egestas dui id. Elementum facilisis leo vel fringilla est ullamcorper eget. Tempor nec feugiat nisl pretium fusce. Proin sagittis nisl rhoncus mattis rhoncus urna. Luctus venenatis lectus magna fringilla. Ut venenatis tellus in metus vulputate eu scelerisque felis. Velit aliquet sagittis id consectetur. Erat velit scelerisque in dictum non consectetur. Pulvinar elementum integer enim neque volutpat ac.
+**Làm việc nhóm** là yếu tố sống còn khi phát triển phần mềm. Bạn sẽ thường xuyên phải phối hợp với frontend, backend, QA và đôi khi cả khách hàng. Một người biết chia sẻ, hỗ trợ đồng đội và cùng hướng tới mục tiêu chung sẽ luôn được đánh giá cao.
 
-Commodo nulla facilisi nullam vehicula ipsum a. Posuere urna nec tincidunt praesent. Eleifend donec pretium vulputate sapien nec. Dolor sit amet consectetur adipiscing. Blandit libero volutpat sed cras ornare arcu dui vivamus. Cras ornare arcu dui vivamus arcu felis bibendum. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Maecenas accumsan lacus vel facilisis volutpat est velit. Lectus sit amet est placerat in egestas erat imperdiet. Augue lacus viverra vitae congue eu. Et pharetra pharetra massa massa. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Id faucibus nisl tincidunt eget nullam non nisi est sit. Id porta nibh venenatis cras sed felis. Velit egestas dui id ornare arcu odio ut sem. Libero justo laoreet sit amet cursus sit amet. Mi quis hendrerit dolor magna eget est lorem.
+**Quản lý thời gian** là kỹ năng giúp bạn cân bằng giữa công việc và học tập, cũng như tránh tình trạng deadline đè nặng. Biết ưu tiên công việc nào quan trọng, phân chia thời gian hợp lý sẽ giúp bạn hoàn thành tốt hơn mà không bị stress.
 
-Feugiat in ante metus dictum at. Nunc sed velit dignissim sodales. Odio aenean sed adipiscing diam donec adipiscing. Diam quam nulla porttitor massa id neque aliquam. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Elementum curabitur vitae nunc sed. Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. Nisi vitae suscipit tellus mauris a. Id aliquet lectus proin nibh. Tortor posuere ac ut consequat semper viverra. Nunc consequat interdum varius sit. Dictum fusce ut placerat orci. Nibh praesent tristique magna sit amet purus gravida quis. Donec ultrices tincidunt arcu non sodales neque sodales ut.
+**Tư duy phản biện và giải quyết vấn đề** cũng rất cần thiết trong lĩnh vực IT. Mỗi dòng code có thể là lời giải cho một vấn đề thực tế, và bạn cần đặt câu hỏi đúng, phản biện chính mình và team để tìm ra hướng đi tối ưu.
+
+**Tinh thần học hỏi liên tục** là một phẩm chất không thể thiếu. Công nghệ thay đổi mỗi ngày. Việc bạn chủ động cập nhật kiến thức mới, học thêm framework mới hoặc đọc tài liệu kỹ thuật sẽ giúp bạn không bị tụt lại phía sau.
+
+Tóm lại, để thành công trong ngành IT, bạn không chỉ cần giỏi chuyên môn mà còn cần hoàn thiện kỹ năng mềm. Những kỹ năng này sẽ giúp bạn thăng tiến nhanh hơn, làm việc hiệu quả hơn và trở thành một thành viên đáng giá trong bất kỳ đội ngũ nào.

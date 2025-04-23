@@ -1,92 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta
-    name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700..900&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="/public/css/style.css"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Hệ thống điểm danh QR | Kevin's blog</title>
-   <!-- fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <!-- Css animation -->
-   <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <!-- SWiperSWiper -->
- <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700..900&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              playfair: ['Playfair Display', 'serif'],
+              roboto: ['Roboto', 'sans-serif'],
+              condensed: ['Roboto Condensed', 'sans-serif'],
+              script: ['Dancing Script', 'cursive'],
+            },
+          },
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: '1rem',
+              sm: '2rem',
+              lg: '4rem',
+              xl: '5rem',
+              '2xl': '6rem',
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/public/css/style.css" />
   </head>
-  <body>
-    
-    <header class="page-header">
-  <div class="container">
-    <div class="page-header__content">
-      <div>
-        <a href="/">
-         <i class="fa-solid fa-compass-drafting"></i>
-         <span >My Home</span>
+
+  <body class="bg-white text-gray-800 font-roboto antialiased">
+    <header class="bg-white shadow-sm text-gray-800 py-4">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between flex-wrap gap-4">
+      
+      <!-- Logo / Tên -->
+      <div class="flex items-center gap-2 text-xl font-semibold">
+        <a href="/" class="flex items-center gap-2 text-gray-800 hover:text-blue-600 transition">
+          <i class="fa-solid fa-compass-drafting text-blue-500"></i>
+          <span>My Home</span>
         </a>
       </div>
-      <div class="search-box">
-            <input type="text" placeholder="Search..." />
-            <span class="search-icon">
-                🔍
-            </span>
-        </div>
 
+      <!-- Navigation -->
       <nav>
-        
-        <ul role="list" class="nav-list flex-group">
+        <ul class="flex gap-6 text-sm sm:text-base font-medium">
           <li>
-            <a href="/">Home</a>
+            <a href="/" class="hover:text-blue-600 transition">Home</a>
           </li>
           <li>
-            <a href="/blog/">Blog</a>
+            <a href="/blog/" class="hover:text-blue-600 transition">Blog</a>
           </li>
           <li>
-            <a href="/portfolio/">Portfolio</a>
+            <a href="/portfolio/" class="hover:text-blue-600 transition">Portfolio</a>
           </li>
         </ul>
       </nav>
+      
     </div>
   </div>
 </header>
-    <main>
+
+
+    <main class="min-h-screen">
       
-      
-<article class="main-article container">
-  <h1 class="article-title">Hệ thống điểm danh QR</h1>
-  <img src="/public/images/logo1.svg" alt="QR Code App" style="width: 100%; border-radius: 12px; margin-bottom: 1rem;">
-  <p style="color: var(--clr-neutral-400); font-style: italic;">Ứng dụng điểm danh nhân viên bằng mã QR và định vị GPS.</p>
-  <div class="project-content flow">
-    <p>Đây là một hệ thống quản lý chấm công nhân viên thông qua việc quét mã QR tại địa điểm công ty. Tích hợp định vị GPS để đảm bảo nhân viên có mặt đúng vị trí.</p>
+<article class="main-article max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-6">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white text-center">
+    Hệ thống điểm danh QR
+  </h1>
+
+  <img
+    src="/public/images/logo1.svg"
+    alt="QR Code App"
+    class="w-full rounded-xl shadow-lg mb-6 object-cover max-h-[500px]"
+  />
+
+  <p class="text-gray-500 italic text-center">
+    Ứng dụng điểm danh nhân viên bằng mã QR và định vị GPS.
+  </p>
+
+  <div class="project-content prose prose-lg dark:prose-invert max-w-none mt-6">
+    <p>Đây là một hệ thống <strong>quản lý chấm công nhân viên thông qua quét mã QR</strong> tại địa điểm làm việc, kết hợp với <strong>xác thực vị trí GPS</strong> để đảm bảo nhân viên có mặt đúng nơi quy định khi điểm danh.</p>
+<p>Dự án được xây dựng theo kiến trúc client-server. Nhân viên sử dụng ứng dụng di động hoặc trình duyệt web để quét mã QR được tạo riêng cho từng địa điểm. Hệ thống backend sử dụng Node.js hoặc Spring Boot để xác thực mã và kiểm tra tọa độ GPS trong phạm vi cho phép (ví dụ: bán kính 50 mét từ văn phòng).</p>
+<p>Tính năng nổi bật:</p>
+<ul>
+<li>Quản lý người dùng theo vai trò (admin, nhân viên)</li>
+<li>Lưu lịch sử điểm danh theo ngày, giờ và vị trí</li>
+<li>Giao diện thân thiện, dễ sử dụng</li>
+<li>Có thể tích hợp thêm báo cáo thống kê và xuất file CSV</li>
+</ul>
+<p>Phù hợp với doanh nghiệp muốn hiện đại hóa quy trình chấm công, tăng tính minh bạch và hạn chế gian lận thời gian làm việc.</p>
 
   </div>
+
   
-    <a href="https://example.com/du-an-qr" class="btn btn--primary" target="_blank">Xem dự án</a>
+    <div class="mt-8 text-center">
+      <a href="https://example.com/du-an-qr" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full shadow transition" target="_blank">
+        Xem dự án
+      </a>
+    </div>
   
 </article>
 
     </main>
-    
-    <footer class="site-footer">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 26.6" class="logo" width="8rem" fill="var(--logo-color, #000)">
-  <path d="M32.4 8.1h2.9v11.7h-2.9V8.1zm4 7.3c0-2.9 1.8-4.6 4.5-4.6s4.5 1.7 4.5 4.6-1.7 4.7-4.5 4.7-4.5-1.7-4.5-4.7zm6.2 0c0-1.6-.6-2.5-1.6-2.5s-1.6.9-1.6 2.5.6 2.5 1.6 2.5 1.6-.8 1.6-2.5zm4 5h2.8c.3.6.9 1 1.6.9 1.1 0 1.7-.6 1.7-1.5v-1.6c-.5 1-1.6 1.7-2.7 1.6-2.1 0-3.5-1.6-3.5-4.4s1.3-4.5 3.6-4.5c1.2-.1 2.3.6 2.7 1.7h-.1V11h2.9v8.8c0 2.1-1.9 3.4-4.6 3.4-2.6 0-4.2-1.1-4.4-2.8zm6-5c0-1.4-.6-2.3-1.7-2.3s-1.7.9-1.7 2.3.6 2.2 1.7 2.2 1.7-.7 1.7-2.2zm4 0c0-2.9 1.8-4.6 4.5-4.6s4.5 1.7 4.5 4.6-1.7 4.7-4.5 4.7-4.4-1.7-4.5-4.7zm6.2 0c0-1.6-.6-2.5-1.6-2.5s-1.6.9-1.6 2.5.6 2.5 1.6 2.5 1.6-.8 1.6-2.5zm4-6.5c0-.8.6-1.5 1.4-1.5.8 0 1.5.6 1.5 1.4 0 .8-.6 1.5-1.4 1.5h-.1c-.7 0-1.4-.6-1.4-1.4zm0 2.1h2.9v8.9h-2.9V11zm13.5 4.4c0 2.9-1.3 4.6-3.5 4.6-1.2.1-2.2-.6-2.7-1.6H74v4.4h-2.9V11H74v1.6c.4-1.1 1.5-1.8 2.7-1.7 2.3 0 3.6 1.6 3.6 4.5zm-3 0c0-1.4-.7-2.3-1.7-2.3s-1.7.9-1.7 2.3.6 2.3 1.7 2.3 1.8-.8 1.7-2.3zm7.9-4.6c2.4 0 3.9 1.1 3.9 3h-2.6c0-.6-.5-1-1.3-1s-1.2.2-1.2.7c0 .5.3.6 1 .7l1.9.4c1.8.4 2.5 1.1 2.5 2.4 0 1.8-1.7 3-4.1 3s-4.1-1.2-4.2-3h2.8c.1.7.6 1 1.4 1s1.2-.3 1.2-.7c0-.5-.3-.6-1-.7l-1.7-.4c-1.7-.4-2.6-1.3-2.6-2.6.1-1.7 1.6-2.8 4-2.8zM99 19.9h-2.8v-1.7h-.1c-.3 1.1-1.4 1.9-2.6 1.8-1.7.1-3.1-1.3-3.2-3v-6h2.9v5.1c0 1 .5 1.6 1.4 1.6.8 0 1.5-.7 1.5-1.5V11H99v8.9zm1.4-8.9h2.8v1.7h.1c.3-1.1 1.4-1.9 2.5-1.9 1.2-.1 2.3.7 2.5 1.9h.1c.4-1.2 1.5-1.9 2.7-1.9 1.5-.1 2.9 1.1 2.9 2.7v6.3h-2.9v-5.3c0-.9-.4-1.4-1.2-1.4-.7 0-1.3.5-1.3 1.2v5.5h-2.8v-5.3c0-.9-.4-1.4-1.2-1.4-.7 0-1.3.6-1.3 1.3v5.4h-2.9V11zM26.7 8.9c0-4.9-4-8.9-8.9-8.9-2.5 0-4.9 1-6.6 2.9H0v23.7h23.7V15.5c1.9-1.7 3-4.1 3-6.6zm-4.6 0c0 2.4-1.9 4.3-4.3 4.3s-4.3-1.9-4.3-4.3 1.9-4.3 4.3-4.3 4.3 1.9 4.3 4.3zM19.2 22H4.6V7.4H9c-.1.5-.1 1-.1 1.4 0 4.9 4 8.9 8.9 8.9.5 0 .9 0 1.4-.1V22z"></path>
-</svg>
-  <p>© 2020 Company Name. All rights reserved.</p>
+
+    <footer class="site-footer bg-gray-900 text-white py-6 mt-12">
+  <div class="container max-w-7xl mx-auto px-4 text-center">
+    <p class="text-sm sm:text-base">
+      © 2025 <strong class="font-semibold text-blue-400">HDUY Dev</strong> – Blog & Dự án IT. All rights reserved.
+    </p>
+  </div>
 </footer>
+
+
     <script src="/public/js/script.js"></script>
   </body>
 </html>

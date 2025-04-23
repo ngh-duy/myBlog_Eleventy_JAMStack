@@ -1,20 +1,22 @@
 ---
 layout: post.njk
-title: My Fifth Article
+title: "Bức tranh toàn cảnh ngành IT: Những điều bạn nên biết"
 author: Kevin Powell
-date: 2021-06-15
+date: 2021-05-01
 tags: ["post", "featured"]
-image: https://wphtml.com/html/tf/chorbi/assets/img/bg/1.jpg
+image: https://wphtml.com/html/tf/chorbi/assets/img/bg/2.jpg
 imageAlt: This is a test
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
+description: Tìm hiểu tổng quan về ngành Công nghệ Thông tin, bao gồm các mảng chính, tiềm năng phát triển và định hướng nghề nghiệp cho người mới bắt đầu.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id leo in vitae turpis massa. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Ornare aenean euismod elementum nisi quis eleifend. Amet tellus cras adipiscing enim eu turpis. Nisi vitae suscipit tellus mauris. Mauris in aliquam sem fringilla ut morbi tincidunt augue. Mi eget mauris pharetra et. Et tortor at risus viverra. Id eu nisl nunc mi ipsum faucibus vitae. Malesuada nunc vel risus commodo viverra maecenas. Et netus et malesuada fames ac turpis egestas sed. Massa vitae tortor condimentum lacinia quis. Eu augue ut lectus arcu bibendum at varius. Enim nec dui nunc mattis enim ut tellus elementum sagittis. In fermentum et sollicitudin ac orci. Nec sagittis aliquam malesuada bibendum arcu vitae elementum. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Id porta nibh venenatis cras sed felis eget velit. In hac habitasse platea dictumst.
+Ngành Công nghệ Thông tin (IT) đang trở thành một trong những lĩnh vực có tốc độ phát triển nhanh nhất toàn cầu. Từ phát triển phần mềm, quản lý hệ thống cho đến an ninh mạng và dữ liệu lớn, IT hiện diện trong mọi khía cạnh của cuộc sống hiện đại. Dù bạn là người mới bắt đầu hay đang tìm hiểu hướng đi phù hợp, việc có cái nhìn toàn cảnh về ngành sẽ giúp bạn định hình rõ con đường sự nghiệp.
 
-Amet est placerat in egestas erat imperdiet sed euismod. Elementum pulvinar etiam non quam. Pharetra convallis posuere morbi leo urna molestie. Varius duis at consectetur lorem donec massa. Id semper risus in hendrerit gravida rutrum quisque. Adipiscing elit pellentesque habitant morbi tristique senectus. Tortor pretium viverra suspendisse potenti. Aenean et tortor at risus viverra adipiscing at in. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. Eu augue ut lectus arcu bibendum at varius vel pharetra. Facilisis magna etiam tempor orci eu. Habitant morbi tristique senectus et. Eu facilisis sed odio morbi quis commodo. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Nulla posuere sollicitudin aliquam ultrices sagittis. At imperdiet dui accumsan sit amet nulla. Nec feugiat in fermentum posuere urna nec tincidunt praesent semper. Tortor id aliquet lectus proin nibh. Tellus at urna condimentum mattis.
+Một số mảng chính trong IT có thể kể đến như: **phát triển web**, **phát triển ứng dụng di động**, **kỹ thuật phần mềm**, **khoa học dữ liệu**, **AI/Machine Learning**, và **an toàn thông tin**. Mỗi mảng lại đòi hỏi một tập hợp kỹ năng riêng, nhưng đều có điểm chung là yêu cầu tư duy logic, khả năng giải quyết vấn đề và tinh thần học hỏi liên tục.
 
-Urna id volutpat lacus laoreet non curabitur gravida arcu ac. Accumsan tortor posuere ac ut consequat. Suspendisse sed nisi lacus sed viverra tellus. Amet nulla facilisi morbi tempus. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Maecenas accumsan lacus vel facilisis volutpat. Fringilla phasellus faucibus scelerisque eleifend. Enim neque volutpat ac tincidunt vitae semper quis. Id eu nisl nunc mi ipsum. Ligula ullamcorper malesuada proin libero nunc. Bibendum at varius vel pharetra vel turpis nunc eget.
+Ngoài kỹ năng chuyên môn, việc sử dụng các công cụ phổ biến như Git, Docker, VS Code, hoặc các nền tảng cloud như AWS, Azure là điều quan trọng để nâng cao hiệu quả làm việc. Hầu hết các nhà tuyển dụng hiện nay đều đánh giá cao ứng viên có khả năng sử dụng thành thạo các công cụ này trong quy trình phát triển phần mềm hiện đại.
 
-Ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Convallis a cras semper auctor. Congue eu consequat ac felis donec et odio. Maecenas ultricies mi eget mauris pharetra. Vel facilisis volutpat est velit egestas dui id ornare. Tempor nec feugiat nisl pretium fusce id velit ut tortor. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Lectus nulla at volutpat diam ut venenatis tellus in. Pellentesque massa placerat duis ultricies. Augue eget arcu dictum varius duis at consectetur lorem.
+Ngành IT còn nổi bật nhờ sự linh hoạt. Bạn có thể làm việc từ xa, tham gia các dự án mã nguồn mở hoặc trở thành freelancer. Nhiều người đã xây dựng sự nghiệp thành công chỉ từ một chiếc laptop và kết nối Internet. Tuy nhiên, sự cạnh tranh trong ngành cũng rất lớn. Do đó, việc xây dựng portfolio cá nhân, tham gia các kỳ thi kỹ thuật, và rèn luyện kỹ năng giao tiếp là vô cùng cần thiết.
 
-Felis donec et odio pellentesque diam volutpat commodo. Donec massa sapien faucibus et. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. A diam sollicitudin tempor id eu nisl. Orci nulla pellentesque dignissim enim sit amet venenatis urna cursus. Cursus turpis massa tincidunt dui. Luctus accumsan tortor posuere ac ut consequat semper viverra. Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. Leo vel fringilla est ullamcorper. Auctor elit sed vulputate mi sit amet mauris. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis.
+Bên cạnh đó, xu hướng công nghệ liên tục thay đổi, do đó việc cập nhật kiến thức qua blog kỹ thuật, YouTube, podcast hoặc các khóa học trực tuyến là điều không thể thiếu. Học tập suốt đời chính là chìa khóa giúp bạn không bị tụt lại phía sau.
+
+Ngành IT là cánh cửa mở ra rất nhiều cơ hội, nhưng để thành công, bạn cần kiên trì, chủ động và sẵn sàng thích nghi với sự đổi mới. Hãy bắt đầu từ những kiến thức cơ bản, và từng bước xây dựng tương lai sự nghiệp cho chính mình trong thế giới công nghệ đầy hấp dẫn này.

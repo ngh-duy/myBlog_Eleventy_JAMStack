@@ -6,16 +6,34 @@ pagination:
   size: 1000
 ---
 
-<section class="section container por">
-  <h1 class="section-title text-center">My Portfolio</h1>
-  <hr class="center-line" />
-  <div class="portfolio-grid">
+<section class="py-16 px-4">
+  <div class="max-w-7xl mx-auto text-center space-y-6">
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">My Portfolio</h1>
+    <hr class="w-24 mx-auto border-blue-500" />
+  </div>
+
+  <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
     {% for project in pagination.items %}
-      <div class="portfolio-item">
-        <img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}">
-        <h3>{{ project.data.title }}</h3>
-        <p>{{ project.data.description }}</p>
-        <a href="{{ project.url }}" class="btn btn--primary">Xem chi tiết</a>
+      <div class="bg-white dark:bg-gray-900 rounded-lg shadow hover:shadow-md transition overflow-hidden flex flex-col">
+        <img
+          src="{{ project.data.image }}"
+          alt="{{ project.data.imageAlt }}"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-6 flex flex-col gap-4 flex-grow">
+          <h3 class="text-lg font-semibold text-gray-800 dark:text-white">
+            {{ project.data.title }}
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">
+            {{ project.data.description }}
+          </p>
+          <a
+            href="{{ project.url }}"
+            class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded-full transition"
+          >
+            Xem chi tiết
+          </a>
+        </div>
       </div>
     {% endfor %}
   </div>
