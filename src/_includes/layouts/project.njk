@@ -7,19 +7,20 @@ layout: base.njk
     {{ title }}
   </h1>
 
-  <img
-    src="{{ image }}"
-    alt="{{ imageAlt }}"
-    class="w-full rounded-xl shadow-lg mb-6 object-cover max-h-[500px]"
-  />
+<img
+  src="{{ image }}"
+  alt="{{ imageAlt }}"
+  class="w-full h-auto rounded-xl shadow-lg mb-6 object-contain max-h-[200px] object-center"
+/>
+
 
   <p class="text-gray-500 italic text-center">
     {{ description }}
   </p>
+<div class="project-content prose prose-lg dark:prose-invert max-w-none mt-6 font-normal">
+  {{ content | safe }}
+</div>
 
-  <div class="project-content prose prose-lg dark:prose-invert max-w-none mt-6">
-    {{ content | safe }}
-  </div>
 
   {% if url %}
     <div class="mt-8 text-center">

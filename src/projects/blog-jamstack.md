@@ -1,7 +1,7 @@
 ---
 layout: project.njk
 title: Blog JAMstack Cá nhân
-image: /public/images/logo2.png
+image: /public/images/pic2_2.jpg
 imageAlt: Blog Eleventy
 description: Blog cá nhân được phát triển với Eleventy, viết nội dung bằng Markdown và quản lý bằng Netlify CMS.
 url: https://example.com/blog

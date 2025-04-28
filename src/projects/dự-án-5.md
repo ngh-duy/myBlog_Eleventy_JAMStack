@@ -4,7 +4,7 @@ title: Dự án 5
 author: Dự án 5
 date: 2025-04-15T01:18:26.114Z
 description: Ứng dụng xác thực người dùng bằng JWT trong hệ thống backend Node.js
-image: /public/images/logo2.png
+image: /public/images/pic2.jpg
 imageAlt: Dự án 5
 tags:
   - project

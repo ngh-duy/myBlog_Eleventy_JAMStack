@@ -1,7 +1,7 @@
 ---
 layout: project.njk
 title: Landing Page Du lịch
-image: /public/images/logo4.png
+image: /public/images/pic1_2.jpg
 imageAlt: Giao diện Landing Page
 description: Giao diện giới thiệu tour du lịch hiện đại, tối ưu hiển thị trên mọi thiết bị.
 url: https://example.com/du-lich
