@@ -1,11 +1,14 @@
 ---
 layout: project.njk
 title: Landing Page Du lịch
-image: /public/images/pic1_2.jpg
-imageAlt: Giao diện Landing Page
+author: "Hduy "
+date: 2025-04-28T01:24:29.547Z
 description: Giao diện giới thiệu tour du lịch hiện đại, tối ưu hiển thị trên mọi thiết bị.
+imageAlt: Giao diện Landing Page
 url: https://example.com/du-lich
-tags: ["project"]
+image: /public/images/dulich.jpg
+tags:
+  - project
 ---
 
 **Landing Page Du lịch** là một dự án giao diện website được thiết kế nhằm giới thiệu dịch vụ tour biển đảo một cách sinh động và chuyên nghiệp. Giao diện được xây dựng bằng HTML, CSS (Tailwind) và JavaScript với khả năng **responsive trên mọi thiết bị**, từ desktop đến mobile.
